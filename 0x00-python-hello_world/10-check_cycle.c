@@ -10,12 +10,22 @@
 
 int check_cycle(listint_t *list)
 {
-	if (list != NULL)
+	int *node1, *node2;
+
+	if (list == NULL)
+		return (0);
+
+	while (list != NULL)
 	{
-		if (list->next != NULL)
-			return (1);
-		else
+		node1 = (int *)&list;
+		node2 = (int *)&list->next;
+		if (list->next == NULL)
 			return (0);
+
+		if (*node1 - *node2 <= 0)
+			return (1);
+
+		list = list->next;
 	}
 	return (0);
 }
