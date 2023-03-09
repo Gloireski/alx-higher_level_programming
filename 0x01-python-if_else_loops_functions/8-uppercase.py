@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 def uppercase(str):
-    if str == "":
-        print("")
     for c in range(len(str)):
+        new_t = ""
         if ord(str[c]) >= ord('a') and ord(str[c]) <= ord('z'):
             asc = ord(str[c]) - 32
+            new_t = chr(asc)
         else:
-            asc = ord(str[c])
+            new_t = str[c]
         if c == len(str)-1:
-            print("{}".format(chr(asc)))
+            print("{}".format(new_t))
         else:
-            print("{}".format(chr(asc)), end='')
+            print("{}".format(new_t), end='')
