@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def uppercase(str):
+    if str == "":
+        return ""
     for c in range(len(str)):
         if ord(str[c]) >= ord('a') and ord(str[c]) <= ord('z'):
             asc = ord(str[c]) - 32
