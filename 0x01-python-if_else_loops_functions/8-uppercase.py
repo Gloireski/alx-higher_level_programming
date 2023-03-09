@@ -7,7 +7,5 @@ def uppercase(str):
             new_t = chr(asc)
         else:
             new_t = str[c]
-        if c == len(str)-1:
-            print("{}".format(new_t))
-        else:
-            print("{}".format(new_t), end='')
+        print("{}".format(new_t), end='')
+    print("")   
