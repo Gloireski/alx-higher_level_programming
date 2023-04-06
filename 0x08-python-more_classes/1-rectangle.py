@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 # 1-rectangle.py
-# BELEM GLOIRE
 """ File name : 1-rectangle.py
     Real definition of a rectangle : class that defines a rectangle
     It is not allowed to import any module
 """
+
 
 class Rectangle:
     """complete rectangle"""
