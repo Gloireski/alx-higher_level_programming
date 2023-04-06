@@ -9,9 +9,10 @@
 class Rectangle(object):
     """complete rectangle"""
     def __init__(self, width=0, height=0):
-        """ constructeur """
-        #self.__check_valid_height(height)
-        #self.__check_valid_width(width)
+        """ constructeur
+            self.__check_valid_height(height)
+            self.__check_valid_width(width)
+        """
         self.height = height
         self.width = width
 
