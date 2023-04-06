@@ -10,8 +10,8 @@ class Rectangle(object):
     """complete rectangle"""
     def __init__(self, width=0, height=0):
         """ constructeur """
+        self.height = height
         self.width = width
-        slef.height = height
 
     @property
     def width(self):
