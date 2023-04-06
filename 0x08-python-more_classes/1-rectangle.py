@@ -10,6 +10,8 @@ class Rectangle(object):
     """complete rectangle"""
     def __init__(self, width=0, height=0):
         """ constructeur """
+        self.__check_valid_height(height)
+        self.__check_valid_width(width)
         self.height = height
         self.width = width
 
@@ -46,3 +48,17 @@ class Rectangle(object):
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    def __check_valid_width(self, width):
+        """ checker """
+        if not isinstance(width, int):
+            raise TypeError("width must be an integer")
+        if width < 0:
+            raise ValueError("widht must be >= 0")
+
+    def __check_valid_height(self, height):
+        """ height checker """
+        if not isinstance(height, int):
+            raise TypeError("height must be an integer")
+        if height < 0:
+            raise ValueError("height must be >= 2")
