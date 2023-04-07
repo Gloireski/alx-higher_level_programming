@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # 1-rectangle.py
+# Gloire Belem <belemgloire133@gmail.com>
 """ File name : 1-rectangle.py
     Real definition of a rectangle : class that defines a rectangle
     It is not allowed to import any module
