@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 # 1-rectangle.py
-# Gloire Belem <belemgloire133@gmail.com>
 """ File name : 1-rectangle.py
     Real definition of a rectangle : class that defines a rectangle
     It is not allowed to import any module
@@ -10,8 +9,7 @@
 class Rectangle(object):
     """complete rectangle"""
     def __init__(self, width=0, height=0):
-        """ 
-            constructeur
+        """ constructeur
             self.__check_valid_height(height)
             self.__check_valid_width(width)
         """
