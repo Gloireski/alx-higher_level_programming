@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # 1-rectangle.py
+# Carlos Barros <1543@holbertonschool.com>
 """ File name : 1-rectangle.py
     Real definition of a rectangle : class that defines a rectangle
     It is not allowed to import any module
@@ -7,18 +8,19 @@
 
 
 class Rectangle(object):
-    """complete rectangle"""
+    """Rectangle: Define new class"""
     def __init__(self, width=0, height=0):
-        """ constructeur
-            self.__check_valid_height(height)
-            self.__check_valid_width(width)
+        """Initialize new class rectangle
+        Args:
+            width (int): width for the new rectangle
+            height (int): height for the new rectangle
         """
-        self.height = height
         self.width = width
+        self.height = height
 
     @property
     def width(self):
-        """returns the porperty width"""
+        """Property for attribute width."""
         return self.__width
 
     @width.setter
@@ -35,31 +37,17 @@ class Rectangle(object):
 
     @property
     def height(self):
-        """returns the porperty height"""
-        return self.___height
+        """Property for attribute height."""
+        return self.__height
 
     @height.setter
     def height(self, value):
-        """Set values to width
+        """Set values to height
         Args:
-            value (int): new value for width
+            value (int): new value for height
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
-    def __check_valid_width(self, width):
-        """ checker """
-        if not isinstance(width, int):
-            raise TypeError("width must be an integer")
-        if width < 0:
-            raise ValueError("widht must be >= 0")
-
-    def __check_valid_height(self, height):
-        """ height checker """
-        if not isinstance(height, int):
-            raise TypeError("height must be an integer")
-        if height < 0:
-            raise ValueError("height must be >= 2")
