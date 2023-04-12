@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+# 1-my_list.txt
+
+=======================
+How to Use 1-my_list.py
+=======================
+
+This module defines a class ``MyList`` that inherits from ``list``.
+
+Instantiation
+=============
+
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
