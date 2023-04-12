@@ -1,19 +1,15 @@
 #!/usr/bin/python3
 # 7-base_geometry.py
-"""
-    File name : 7-base_geometry.py
-    Requirement: not allowed to import any module
+"""Represent BaseGeometry class
 """
 
 
-class BaseGeometry(object):
-    """
-        class BaseGeometry
-    """
+class BaseGeometry:
+    """Represent BaseGeometry"""
     def area(self):
-        """
-             raises an Exception with the message
-             area() is not implemented
+        """Represent area
+        Raises:
+            Exception: [area() is not implemented]
         """
         raise Exception("area() is not implemented")
 
@@ -26,7 +22,7 @@ class BaseGeometry(object):
             TypeError: [must be an integer]
             ValueError: [must be greater than 0]
         """
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
