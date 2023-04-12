@@ -6,12 +6,12 @@
 """
 
 
-idef inherits_from(obj, a_class):
+def inherits_from(obj, a_class):
     """
         check is object is an instance of a class or subclass
-        directly or not
+        directly or noit
     """
-    if isinstance(obj, a_class):
+    if type(obj) != a_class and issubclass(type(obj), a_class):
         return True
     else:
         return False
