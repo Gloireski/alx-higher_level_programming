@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 # 8-rectangle.py
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
 """
     File name : 8-rectangle.py
     Requirement:none
 """
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
@@ -15,13 +15,16 @@ class Rectangle(BaseGeometry):
         """
             construc
         """
-        self.width = width
-        self.height = height
+        self.integer_validator("width", width)
+        self.__width = width
+        self.integer_validator("height", height)
+        self.__height = height
 
     def area(self):
-        """Represent area
-        Raises:
-            Exception: [area() is not implemented]
+        """
+            Represent area
+            Return:
+            width * height
         """
         return self.__width * self.__height
 
