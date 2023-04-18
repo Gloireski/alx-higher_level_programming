@@ -116,3 +116,9 @@ class Rectangle(Base):
     def area(self):
         """ returns the area value """
         return self.__width * self.__height
+
+    def display(self):
+        y = 0
+        while (y < self.__height):
+            print("#" * self.__width)
+            y += 1
