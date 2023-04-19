@@ -118,10 +118,15 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
-        y = 0
-        while (y < self.__height):
+        c = 0
+        d = 1
+        while (d <= self.__y):
+            print("")
+            d += 1
+        while (c < self.__height):
+            print(" " * self.x, end='')
             print("#" * self.__width)
-            y += 1
+            c += 1
 
     def __str__(self):
         """
