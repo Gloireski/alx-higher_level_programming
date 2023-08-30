@@ -4,6 +4,7 @@
     first class
 """
 
+
 class Square:
     """define an empty class"""
     {}
