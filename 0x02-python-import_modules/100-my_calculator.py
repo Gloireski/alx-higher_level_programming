@@ -9,9 +9,6 @@ if __name__ == "__main__":
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
     op = sys.argv[2]
-    if op not in "+-*/":
-        print("Unknown operator. Available operators: +, -, * and /")
-        sys.exit(1)
     a, b = int(sys.argv[1]), int(sys.argv[3])
     if op == "+":
         print("{:d} {:s} {:d} = {:d}".format(a, op, b, add(a, b)))
