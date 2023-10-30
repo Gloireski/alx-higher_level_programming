@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-# Belem Gloire BEKOUTOU
 # 0-rectangle.py
+# Belem Gloire BEKOUTOU
+"""Define a rectangle"""
+
 
 class Rectangle:
-    """ empty rectangle """
+    """Represents a rectangle"""
     pass
