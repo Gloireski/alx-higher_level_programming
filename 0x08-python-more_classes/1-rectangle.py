@@ -35,7 +35,7 @@ class Rectangle:
                 raise ValueError("width must be >= 0")
             self.__width = value
         else:
-            raise TypeError("1-rectangle.py")
+            raise TypeError("width must be an integer")
 
     @height.setter
     def height(self, value):
