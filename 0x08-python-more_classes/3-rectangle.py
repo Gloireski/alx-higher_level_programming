@@ -38,7 +38,6 @@ class Rectangle:
         else:
             return (2 * (self.__width + self.__height))
 
-
     def __str__(self):
         """Returns a printable rep of rectangle"""
         if self.__width == 0 or self.height == 0:
