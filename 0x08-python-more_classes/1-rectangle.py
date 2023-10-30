@@ -30,7 +30,7 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """Sets value to width"""
-        if isinstance(value, int):
+        if type(value) is int:
             if value < 0:
                 raise ValueError("width must be >= 0")
             self.__width = value
