@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-#0-add_integer.py
-#Belem Gloire BEKOUTOU
+# 0-add_integer.py
+# Belem Gloire BEKOUTOU
 """Adds to integer"""
+
 
 def add_integer(a, b=98):
     """function that adds 2 integers."""
