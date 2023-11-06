@@ -60,6 +60,12 @@ Numbers:
    >>> my_list.print_sorted()
    [5, 5, 5, 5, 5, 10000000000000000000000000000000000000000000]
 
+:: with None value
+>>> my_list.append(None)
+   >>> my_list.print_sorted()
+   Traceback (most recent call last):
+   TypeError: '<' not supported between instances of 'NoneType' and 'int'
+
 :: with Null value
    >>> my_list.append(NULL)
    Traceback (most recent call last):
