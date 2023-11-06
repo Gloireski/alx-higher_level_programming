@@ -60,11 +60,6 @@ Numbers:
    >>> my_list.print_sorted()
    [5, 5, 5, 5, 5, 10000000000000000000000000000000000000000000]
 
-:: with None value
->>> my_list.append(None)
-   >>> my_list.print_sorted()
-[None]
-
 :: with Null value
    >>> my_list.append(NULL)
    Traceback (most recent call last):
