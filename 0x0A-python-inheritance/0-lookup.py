@@ -13,4 +13,4 @@ def lookup(obj):
         object: object of which to returns attr and meth
     """
     obj_list = list(dir(obj))
-    return dir(obj_list)
+    return obj_list
