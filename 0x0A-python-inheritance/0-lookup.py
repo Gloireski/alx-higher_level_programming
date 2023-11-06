@@ -1,4 +1,4 @@
-#!/usr/bin.python3
+#!/usr/bin/python3
 # 0-lookup.py
 # Belem Gloire BEKOUTOU
 """Define lookup function"""
@@ -12,5 +12,4 @@ def lookup(obj):
     Args:
         object: object of which to returns attr and meth
     """
-    obj_list = list(dir(obj))
-    return obj_list
+    return dir(obj)
