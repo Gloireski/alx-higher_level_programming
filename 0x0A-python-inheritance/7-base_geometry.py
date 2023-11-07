@@ -4,7 +4,7 @@
 """define class base on BaseGeometry"""
 
 
-class BaseGeometry(object):
+class BaseGeometry:
     """BaseGeometry based class"""
     pass
 
