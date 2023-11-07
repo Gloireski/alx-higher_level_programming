@@ -6,7 +6,6 @@
 
 class BaseGeometry:
     """BaseGeometry based class"""
-    pass
 
     def area(self):
         """not implemented"""
