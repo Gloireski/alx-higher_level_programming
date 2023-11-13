@@ -104,7 +104,7 @@ class Rectangle(Base):
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
                 self.__y, self.__width, self.__height))
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Assigns an argument to each attribute:
             1st argument should be the id attribute
             2nd argument should be the width attribute
@@ -115,9 +115,10 @@ class Rectangle(Base):
             - Argument order is super important.
 
             Args:
-                *args: list of arguments, none kiwarded
+                *args: list of arguments, none keyworded
+                **kwargs: pointer to keyworded argument
         """
-        if args and args != 0:
+        if args and len(args) != 0:
             i = 0
             for arg in args:
                 if i == 0:
@@ -134,3 +135,18 @@ class Rectangle(Base):
                 elif i == 4:
                     self.y = arg
                 i += 1
+        elif kwargs and len(kwargs) != 0:
+            for key, value in kwargs.items():
+                if key == "id":
+                    if value is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = value
+                elif key == "width":
+                    self.width = value
+                elif key == "height":
+                    self.height = value
+                elif key == "x":
+                    self.x = value
+                elif key == "y":
+                    self.y = value
