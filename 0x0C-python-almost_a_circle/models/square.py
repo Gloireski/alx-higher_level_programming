@@ -11,11 +11,6 @@ class Square(Rectangle):
         """initialize variables"""
         super().__init__(size, size, x, y, id)
 
-    def __str__(self):
-        """returns [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
-        return ("[Square] ({}) {}/{} - {}".format(self.id, self.x,
-                self.y, self.width))
-
     @property
     def size(self):
         """Get the size of the Square."""
@@ -69,3 +64,17 @@ class Square(Rectangle):
                     self.x = value
                 elif key == "y":
                     self.y = value
+
+    def to_dictionary(self):
+        """returns the dictionary representation of a Square"""
+        return {
+                "id": self.id,
+                "size": self.size,
+                "x": self.x,
+                "y": self.y
+                }
+
+    def __str__(self):
+        """returns [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
+        return ("[Square] ({}) {}/{} - {}".format(self.id, self.x,
+                self.y, self.width))
