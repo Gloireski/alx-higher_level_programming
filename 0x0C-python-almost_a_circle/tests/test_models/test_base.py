@@ -10,6 +10,7 @@ Unittest classes:
     TestBase_load_from_file - line 338
 """
 import unittest
+import os
 from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
