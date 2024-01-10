@@ -7,11 +7,12 @@ class Rectangle {
       this.height = h;
     }
   }
-  print() {
-    var i = 0;
-    while (i < this.h) {
-    console.log('X'.repeat(this.w));
-    i++;
+
+  print () {
+    let i = 0;
+    while (i < this.height) {
+      console.log('X'.repeat(this.width));
+      i++;
     }
   }
 }
