@@ -10,7 +10,6 @@ class Rectangle {
   print() {
     var i = 0;
     while (i < this.h) {
-    console.log('hi');
     console.log('X'.repeat(this.w));
     i++;
     }
