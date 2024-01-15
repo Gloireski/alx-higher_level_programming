@@ -26,7 +26,7 @@ if __name__ == "__main__":
                  (SELECT states.id FROM states WHERE states.name = '{}')"""
               .format(sys.argv[4]))
     rows = c.fetchall()
-    for row in rows:
-        print(row)
+    tmp = list(row[0] for row in rows)
+    print(*tmp, sep=", ")
     c.close()
     db.close()
