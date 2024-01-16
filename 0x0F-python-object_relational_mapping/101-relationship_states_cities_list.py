@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 # Belem Gloire BEKOUTOU
-# 100-relationship_states_cities.py
+# 101-relationship_states_cities_list.py
 """
-Creates the State "California" with the City "San Francisco" from a DB
+   Lists all State objects, and corresponding City objects,
+   contained in the database hbtn_0e_101_usa
 """
 import sys
 from relationship_state import Base, State
@@ -20,10 +21,7 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    newState = State(name='California')
-    newCity = City(name='San Francisco')
-    newState.cities.append(newCity)
-
-    session.add(newState)
-    session.add(newCity)
-    session.commit()
+    for state in session.query(State).order_by(State.id):
+        print("{}: {}".format(state.id, state.name))
+        for city in state.cities:
+            print("    {}: {}".format(city.id, city.name))
