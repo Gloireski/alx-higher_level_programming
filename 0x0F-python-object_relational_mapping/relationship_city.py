@@ -14,8 +14,6 @@ from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 
 
-
-
 class City(Base):
     """city model class"""
     __tablename__ = 'cities'
